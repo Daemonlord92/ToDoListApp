@@ -12,4 +12,14 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.', date_started: Date.to
   	before { @post.task = " " }
   	it { should_not be_valid }
   end
+
+  describe "when date_started is not present" do
+  	before { @post.date_started = " " }
+  	it { should_not be_valid }
+  end
+
+  describe "when due_date is not present" do
+  	before { @post.due_date = " " }
+  	it { should_not be_valid }
+  end
 end
