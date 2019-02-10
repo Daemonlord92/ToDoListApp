@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+100.times do |post|
+	Post.create!(task: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', date_started: Date.today, due_date: Date.today + 7)
+end
