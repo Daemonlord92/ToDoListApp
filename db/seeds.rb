@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-100.times do |post|
+15.times do |post|
 	Post.create!(task: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', date_started: Date.today, due_date: Date.today + 7)
 end
+puts '15 tasks created!'
